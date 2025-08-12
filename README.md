@@ -20,10 +20,7 @@ To run this project, you will need the following:
 
 1.  **Clone the Repository:**
 
-    ```
-    git clone [https://github.com/your-username/aloware-twilio-quickstart.git](https://github.com/your-username/aloware-twilio-quickstart.git)
-    cd aloware-twilio-quickstart
-    ```
+    
 
 2.  **Configure the Twilio Serverless Functions:** The original Quickstart project includes a `Server` directory. This is where we will set up the backend logic for generating tokens and handling TwiML.
 
@@ -69,6 +66,7 @@ The quickstart application works by connecting several key components. The Andro
 Here is a simplified flow of how the system works for both outgoing and incoming calls.
 
 **Overall System Diagram**
+````
 +----------------+      (1) Get Access Token      +----------------+
 |  Android App   |------------------------------->| TwiML Server   |
 | (Client)       |<-------------------------------| (Serverless)   |
@@ -91,6 +89,7 @@ v        |                                       v
 +------------------+                                +-----------------+
 | PSTN (PSTN Call) |<------------------------------->| Other Client    |
 +------------------+                                +-----------------+
+````
 
 
 **Key Steps:**
